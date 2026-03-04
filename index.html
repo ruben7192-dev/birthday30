@@ -2,28 +2,44 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Mi página</title>
+  <title>Feliz 30 Cumpleaños</title>
+
+  <!-- Fuente elegante -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
   <style>
     body{
-      font-family: Arial, sans-serif;
+      font-family: 'Inter', sans-serif;
       text-align: center;
-      background: #f5f5f5;
       margin: 0;
       padding: 40px;
+
+      /* Imagen de fondo */
+      background-image: url("fondo.jpg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    h1, h2{
+      font-family: 'Playfair Display', serif;
+      letter-spacing: 1px;
     }
 
     img{
       max-width: 300px;
       border-radius: 12px;
+      margin-bottom: 10px;
     }
 
     .container{
       max-width: 600px;
       margin: auto;
-      background: white;
+      background: rgba(255,255,255,0.9);
       padding: 30px;
       border-radius: 16px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+      backdrop-filter: blur(4px);
     }
 
     a{
@@ -34,10 +50,22 @@
       background: black;
       color: white;
       border-radius: 8px;
+      transition: 0.2s;
+    }
+
+    a:hover{
+      transform: translateY(-2px);
+      opacity: 0.9;
     }
 
     section{
-      margin-top: 60px;
+      margin-top: 80px;
+      background: rgba(255,255,255,0.9);
+      padding: 30px;
+      border-radius: 16px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
     }
   </style>
 </head>
@@ -46,27 +74,31 @@
   <div class="container">
     <img src="30flowers.png" alt="imagen">
 
-    <h1>Título</h1>
-    <p>Este es un pequeño texto de tu página.</p>
+    <h1>Feliz 30</h1>
+
+    <p>
+      Estas 20 canciones hablan de lo que no puedo evitar decirte de mí desde el primer día que te vi hasta hoy.
+      Han sido cuidadosamente seleccionadas y ordenadas para ti, así que te aconsejo que las escuches con auriculares
+      en el orden en el que te las entrego. Espero que tengas la paciencia para escucharlas todas.
+    </p>
 
     <a href="https://open.spotify.com/playlist/TU_PLAYLIST" target="_blank">
-      Escuchar playlist
+      Escuchar la playlist
     </a>
 
     <a href="#letras">
-      Ver letras
+      Ver las letras
     </a>
   </div>
 
   <section id="letras">
     <h2>Letras</h2>
     <p>
-      Aquí puedes poner las letras de las canciones.<br>
+      Aquí puedes poner las letras de las canciones.<br><br>
       Canción 1...<br><br>
       Canción 2...
     </p>
   </section>
 
 </body>
-
 </html>
