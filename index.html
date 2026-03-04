@@ -46,7 +46,7 @@
     .letra-titulo {
       font-family: 'Cormorant Garamond', serif;
       font-weight: bold;
-      font-size: 22px;
+      font-size: clamp(24px, 4vw, 30px);
       margin-top: 20px;
       margin-bottom: 10px;
       text-align: center; /* opcional */
@@ -54,11 +54,11 @@
     
     /* Texto de la letra */
     .letra-texto {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Cormorant Garamond', serif;
       font-weight: normal;
-      font-size: 18px;
+      font-size: clamp(20px, 4vw, 24px);
       line-height: 1.6;
-      text-align: justify;
+      text-align: center;
       margin-bottom: 20px;
     }
     
@@ -226,7 +226,11 @@
       Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat.
     </p>
 
-    <p class="letra-titulo">Sidecars - Quién sabe</p>
+    <p class="letra-titulo">
+      ***<br><br>
+      
+      Sidecars - Quién sabe
+    </p>
     <p class="letra-texto">
       Quién sabe cómo acabará esta noche<br>
       Si nos sacarán a hombros entre vítores y voces<br>
@@ -274,6 +278,7 @@
 
 </body>
 </html>
+
 
 
 
